@@ -1,0 +1,9 @@
+# Worker Static Assets で配信しないファイル/ディレクトリ
+src/
+functions/
+.dev.vars*
+*.md
+wrangler.toml
+.gitignore
+.assetsignore
+.claude/
