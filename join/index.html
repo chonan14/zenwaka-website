@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>入会のご案内 — 全国若手議員の会</title>
+<meta name="description" content="全国若手議員の会への入会のご案内。39歳までに初当選、45歳以下の自治体議員が対象です。年会費3,000円（＋各地域ブロック会費）。" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="site-logo"><span class="site-logo-jp">全国若手議員の会</span><span class="site-logo-en">Young Councilors Association of Japan</span></a>
+    <nav class="site-nav" aria-label="グローバルナビゲーション">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="メニューを開く"><span class="nav-toggle-icon"></span></button>
+      <ul id="primary-nav" class="nav-list">
+        <li><a href="/about/">About</a></li><li><a href="/activities/">活動</a></li><li><a href="/media/">メディア</a></li><li><a href="/contact/">Contact</a></li><li class="nav-translate-group"><span aria-hidden="true">🌐</span><a class="nav-translate-lang" id="translate-en" target="_blank" rel="noopener" href="https://translate.google.com/translate?sl=ja&amp;tl=en" aria-label="Translate to English">EN</a><span aria-hidden="true" class="nav-translate-sep">/</span><a class="nav-translate-lang" id="translate-fr" target="_blank" rel="noopener" href="https://translate.google.com/translate?sl=ja&amp;tl=fr" aria-label="Traduire en français">FR</a></li><li><a href="/join/" class="btn btn-primary btn-small">入会</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="page-header">
+  <div class="container">
+    <p class="breadcrumb"><a href="/">HOME</a><span>/</span>入会のご案内</p>
+    <h1>入会のご案内</h1>
+    <p class="lede">全国の若手議員とつながり、現場の課題を政策へ</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div style="max-width:720px;margin:0 auto;">
+      <div class="section-title"><h2>入会資格</h2></div>
+      <ul style="list-style:none;padding:0;">
+        <li style="padding:var(--sp-3) 0;border-bottom:1px solid var(--c-border);"><strong style="color:var(--c-accent);margin-right:var(--sp-3);">✓</strong>39歳までに初当選された自治体議員</li>
+        <li style="padding:var(--sp-3) 0;border-bottom:1px solid var(--c-border);"><strong style="color:var(--c-accent);margin-right:var(--sp-3);">✓</strong>45歳以下</li>
+        <li style="padding:var(--sp-3) 0;border-bottom:1px solid var(--c-border);"><strong style="color:var(--c-accent);margin-right:var(--sp-3);">✓</strong>超党派のため党派による制限はありません</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-title"><h2>年会費</h2></div>
+    <p style="text-align:center;">
+      <span style="font-size:clamp(2.5rem,6vw,4.5rem);font-weight:700;color:var(--c-accent);letter-spacing:-0.02em;">3,000</span>
+      <span style="font-size:var(--fs-xl);color:var(--c-text-sub);margin-left:var(--sp-2);">円 / 年</span>
+    </p>
+    <p style="text-align:center;color:var(--c-text-sub);font-size:var(--fs-sm);margin-top:var(--sp-3);">＋ 各地域ブロック会費</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div style="max-width:720px;margin:0 auto;">
+      <div class="section-title"><h2>得られるもの</h2></div>
+      <ul class="prose" style="list-style:disc;margin-left:var(--sp-4);">
+        <li>全国9ブロック・4部会での議員間ネットワーク</li>
+        <li>年度総会（100人規模）への参加</li>
+        <li>全国研修（年4回）／地域研修（都道府県単位で随時実施）への参加</li>
+        <li>政策提言活動への参画</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-title"><h2>入会フォーム</h2><p>下記フォームよりお申し込みください</p></div>
+    <form class="form" action="/api/join" method="POST" data-form-handler>
+      <div class="form-field">
+        <label class="form-label" for="name">氏名<span class="req">*</span></label>
+        <input class="form-input" type="text" id="name" name="name" required autocomplete="name" />
+      </div>
+      <div class="form-field">
+        <label class="form-label" for="postal">郵便番号<span class="req">*</span></label>
+        <input class="form-input" type="text" id="postal" name="postal" required autocomplete="postal-code" placeholder="例: 100-0000" style="max-width:12em;" />
+      </div>
+      <div class="form-field">
+        <label class="form-label" for="address">住所<span class="req">*</span></label>
+        <input class="form-input" type="text" id="address" name="address" required autocomplete="street-address" />
+      </div>
+      <div class="form-field">
+        <label class="form-label" for="phone">携帯電話番号<span class="req">*</span></label>
+        <input class="form-input" type="tel" id="phone" name="phone" required autocomplete="tel" />
+      </div>
+      <div class="form-field">
+        <label class="form-label" for="email">メールアドレス<span class="req">*</span></label>
+        <input class="form-input" type="email" id="email" name="email" required autocomplete="email" />
+      </div>
+      <div class="form-field">
+        <label class="form-label" for="municipality">自治体名<span class="req">*</span></label>
+        <input class="form-input" type="text" id="municipality" name="municipality" required placeholder="例: ◯◯県◯◯市" />
+      </div>
+      <div class="form-field">
+        <label class="form-label" for="elected">当選年<span class="req">*</span></label>
+        <input class="form-input" type="text" id="elected" name="elected" required placeholder="例: 2023" style="max-width:10em;" />
+      </div>
+      <div class="form-field">
+        <label class="form-check">
+          <input type="checkbox" name="agree" required />
+          <span><a href="#" target="_blank" rel="noopener">規約</a>に同意する</span>
+        </label>
+      </div>
+      <div class="form-submit">
+        <button type="submit" class="btn btn-primary btn-large">送信する</button>
+        <p class="form-note">※ 入会審査後、事務局よりご連絡いたします</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand"><p class="footer-name">全国若手議員の会</p><p class="footer-name-en">Young Councilors Association of Japan</p></div>
+      <nav class="footer-nav" aria-label="フッターナビゲーション">
+        <div class="footer-col"><p class="footer-heading">About</p><ul><li><a href="/about/">会の目的</a></li><li><a href="/about/#message">会長挨拶</a></li><li><a href="/members/">役員・ブロック</a></li><li><a href="/history/">歴史</a></li></ul></div>
+        <div class="footer-col"><p class="footer-heading">活動</p><ul><li><a href="/activities/">今年度の活動</a></li></ul></div>
+        <div class="footer-col"><p class="footer-heading">情報</p><ul><li><a href="/media/">メディア掲載</a></li><li><a href="/links/">リンク集</a></li></ul></div>
+        <div class="footer-col"><p class="footer-heading">その他</p><ul><li><a href="https://meibo.netlify.app/" target="_blank" rel="noopener">会員名簿（現会員のみ利用可）↗</a></li><li><a href="/contact/">Contact</a></li><li><a href="/join/">入会</a></li></ul></div>
+      </nav>
+    </div>
+    <div class="footer-bottom"><p>&copy; 1994 全国若手議員の会</p><ul class="footer-legal"><li><a href="#">規約</a></li><li><a href="/privacy/">プライバシーポリシー</a></li></ul></div>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js" defer></script>
+</body>
+</html>

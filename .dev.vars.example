@@ -1,0 +1,8 @@
+# Cloudflare Pages 環境変数のテンプレート
+# このファイルを `.dev.vars` にコピーし、実際のWebhook URLを設定してください。
+# 本番環境では Cloudflare Pages ダッシュボード → Settings → Environment variables に設定します。
+# `.dev.vars` は .gitignore に含まれているのでコミットされません。
+
+DISCORD_JOIN_WEBHOOK="https://discord.com/api/webhooks/XXXX/XXXX"
+DISCORD_CONTACT_WEBHOOK="https://discord.com/api/webhooks/XXXX/XXXX"
+DISCORD_PRESS_WEBHOOK="https://discord.com/api/webhooks/XXXX/XXXX"
