@@ -26,6 +26,22 @@ export default {
       );
     }
 
+    // デバッグ: env varsの存在確認 (値は返さない)
+    if (url.pathname === '/api/health') {
+      return new Response(JSON.stringify({
+        ok: true,
+        bindings: {
+          DISCORD_JOIN_WEBHOOK: !!env.DISCORD_JOIN_WEBHOOK,
+          DISCORD_CONTACT_WEBHOOK: !!env.DISCORD_CONTACT_WEBHOOK,
+          DISCORD_PRESS_WEBHOOK: !!env.DISCORD_PRESS_WEBHOOK,
+          ASSETS: !!env.ASSETS,
+        },
+        envKeys: Object.keys(env).sort(),
+      }, null, 2), {
+        headers: { 'Content-Type': 'application/json; charset=utf-8' },
+      });
+    }
+
     // 静的アセットにフォールスルー
     return env.ASSETS.fetch(request);
   },
