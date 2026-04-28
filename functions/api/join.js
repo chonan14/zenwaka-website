@@ -12,7 +12,7 @@ export async function onRequestPost(context) {
     return jsonResponse({ ok: false, error: 'リクエストの解析に失敗しました' }, 400);
   }
 
-  const required = ['name', 'postal', 'address', 'phone', 'email', 'municipality', 'elected'];
+  const required = ['name', 'age', 'phone', 'municipality', 'elected'];
   const missing = required.filter(f => !(data[f] || '').trim());
   if (missing.length > 0) {
     return jsonResponse({ ok: false, error: `必須項目が未入力です: ${missing.join(', ')}` }, 400);
@@ -28,12 +28,10 @@ export async function onRequestPost(context) {
     color: 0xE87722,
     fields: [
       { name: '氏名', value: trunc(data.name), inline: true },
-      { name: '自治体', value: trunc(data.municipality), inline: true },
-      { name: '当選年', value: trunc(String(data.elected)), inline: true },
-      { name: 'メール', value: trunc(data.email), inline: false },
-      { name: '電話', value: trunc(data.phone), inline: true },
-      { name: '郵便番号', value: trunc(data.postal), inline: true },
-      { name: '住所', value: trunc(data.address), inline: false },
+      { name: '年齢', value: trunc(String(data.age)), inline: true },
+      { name: '電話番号', value: trunc(data.phone), inline: true },
+      { name: '自治体名', value: trunc(data.municipality), inline: true },
+      { name: '初当選年', value: trunc(String(data.elected)), inline: true },
     ],
     timestamp: new Date().toISOString(),
     footer: { text: '全国若手議員の会 / 入会フォーム' },

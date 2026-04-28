@@ -74,34 +74,26 @@
 
 <section class="section section-alt">
   <div class="container">
-    <div class="section-title"><h2>入会フォーム</h2><p>下記フォームよりお申し込みください</p></div>
+    <div class="section-title"><h2>（仮）入会フォーム</h2><p>下記フォームよりお申し込みください</p></div>
     <form class="form" action="/api/join" method="POST" data-form-handler>
       <div class="form-field">
         <label class="form-label" for="name">氏名<span class="req">*</span></label>
         <input class="form-input" type="text" id="name" name="name" required autocomplete="name" />
       </div>
       <div class="form-field">
-        <label class="form-label" for="postal">郵便番号<span class="req">*</span></label>
-        <input class="form-input" type="text" id="postal" name="postal" required autocomplete="postal-code" placeholder="例: 100-0000" style="max-width:12em;" />
+        <label class="form-label" for="age">年齢<span class="req">*</span></label>
+        <input class="form-input" type="number" id="age" name="age" required min="20" max="60" placeholder="例: 35" style="max-width:8em;" />
       </div>
       <div class="form-field">
-        <label class="form-label" for="address">住所<span class="req">*</span></label>
-        <input class="form-input" type="text" id="address" name="address" required autocomplete="street-address" />
-      </div>
-      <div class="form-field">
-        <label class="form-label" for="phone">携帯電話番号<span class="req">*</span></label>
+        <label class="form-label" for="phone">電話番号<span class="req">*</span></label>
         <input class="form-input" type="tel" id="phone" name="phone" required autocomplete="tel" />
-      </div>
-      <div class="form-field">
-        <label class="form-label" for="email">メールアドレス<span class="req">*</span></label>
-        <input class="form-input" type="email" id="email" name="email" required autocomplete="email" />
       </div>
       <div class="form-field">
         <label class="form-label" for="municipality">自治体名<span class="req">*</span></label>
         <input class="form-input" type="text" id="municipality" name="municipality" required placeholder="例: ◯◯県◯◯市" />
       </div>
       <div class="form-field">
-        <label class="form-label" for="elected">当選年<span class="req">*</span></label>
+        <label class="form-label" for="elected">初当選年<span class="req">*</span></label>
         <input class="form-input" type="text" id="elected" name="elected" required placeholder="例: 2023" style="max-width:10em;" />
       </div>
       <div class="form-field">
